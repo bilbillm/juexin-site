@@ -10,6 +10,11 @@
 - QQ 群号：1046657889。修改时同步更新 HTML 与 JavaScript。
 - `dist/assets/qq-group.jpg` 为用户提供的原始图片，未经重绘。
 - `dist/assets/hero.webp` 为内置 image_gen 生成的首页空间背景。页面使用 CSS 透视与鼠标视差，不是实时 WebGL 场景。
+- `dist/v2.css` 与 `dist/assets/activity.jpg`、`people.jpg`、`impact.jpg` 属于当前视觉增强预览：图像档案、横向拖动、滚动进度线、光影和悬停动效。
+
+## 回滚
+
+当前线上版本没有被这次预览覆盖。原始网站已保存为 [觉心网站-v1-原始回滚备份.zip](../觉心网站-v1-原始回滚备份.zip)。
 
 ## 内容依据
 
