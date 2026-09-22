@@ -159,7 +159,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 h2{font-size:clamp(30px,4.4vw,54px);font-weight:900;line-height:1.4;letter-spacing:.05em}
 .lead{font-size:clamp(17px,1.8vw,20px);color:var(--paper);font-weight:600}
 
-/* ---------- 壹 / 深渊 ---------- */
+/* ---------- 壹 / 定位 ---------- */
 .intro-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(36px,6vw,96px);align-items:start}
 .intro-copy p+p{margin-top:18px}
 .intro-copy p:not(.lead){color:var(--paper-dim)}
@@ -191,7 +191,7 @@ h2{font-size:clamp(30px,4.4vw,54px);font-weight:900;line-height:1.4;letter-spaci
 }
 .interlude-cite{margin-top:22px;font-family:var(--latin);font-size:13px;letter-spacing:.3em;color:var(--muted)}
 
-/* ---------- 贰 / 现场 ---------- */
+/* ---------- 贰 / 意象 ---------- */
 .archive-head{display:grid;grid-template-columns:1.2fr 1fr auto;gap:clamp(24px,4vw,64px);align-items:end;margin-bottom:clamp(40px,6vh,64px)}
 .archive-head p{color:var(--paper-dim);font-size:15px}
 .archive-hint{font-size:12px;letter-spacing:.2em;color:var(--muted);white-space:nowrap}
@@ -255,7 +255,7 @@ h2{font-size:clamp(30px,4.4vw,54px);font-weight:900;line-height:1.4;letter-spaci
   font-size:13px;letter-spacing:.2em;color:var(--muted);
 }
 
-/* ---------- 叁 / 共读 ---------- */
+/* ---------- 叁 / 活动 ---------- */
 .section-heading{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(24px,5vw,80px);align-items:end;margin-bottom:clamp(44px,7vh,72px)}
 .section-heading p{color:var(--paper-dim);font-size:15px;line-height:2}
 .activity-list{border-top:1px solid var(--line-strong)}
@@ -281,7 +281,7 @@ details[open] .detail-sign{transform:rotate(45deg)}
 .activity-note{font-size:13px;letter-spacing:.22em;color:var(--muted)}
 .schedule-note{margin-top:26px;font-size:13px;letter-spacing:.16em;color:var(--muted)}
 
-/* ---------- 回声 ---------- */
+/* ---------- 项目实践 ---------- */
 .practice{
   display:grid;grid-template-columns:1fr 1.4fr;gap:clamp(40px,6vw,100px);
   background:var(--ink-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);
@@ -334,7 +334,7 @@ details[open] .detail-sign{transform:rotate(45deg)}
 .library-index a strong{font-family:var(--serif);font-size:17.5px;letter-spacing:.14em;color:var(--paper);font-weight:600}
 .library-index a span{font-family:var(--serif);font-size:13px;letter-spacing:.12em}
 
-/* ---------- 陆 / 落座 ---------- */
+/* ---------- 伍 / 加入 ---------- */
 .join{
   display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(40px,6vw,110px);align-items:center;
   background:
