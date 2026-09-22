@@ -1,0 +1,2 @@
+# 站点是静态文件，统一用 LF，避免 Windows 下 CRLF 反复改写
+* text=auto eol=lf
