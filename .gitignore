@@ -1,3 +1,7 @@
 .sites-runtime/
 *.tar.gz
 node_modules/
+
+# 本地回滚备份与校验截图不入库，版本历史由 git 记录
+dist-backup-*/
+verify-shots*/
