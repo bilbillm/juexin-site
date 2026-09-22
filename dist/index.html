@@ -6,13 +6,14 @@
   <title>觉心精神分析协会 · 理解自己，也理解他人</title>
   <meta name="description" content="觉心精神分析协会，面向温州医科大学及温州医科大学仁济学院全体学生。以读书会、学术研讨与专题讲座，开启长期共学。">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css?v=v1"><link rel="stylesheet" href="v2.css?v=v2"><script src="app.js?v=v5" defer></script>
 </head>
 <body>
 <a class="skip" href="#about">跳至正文</a>
 <header class="header">
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
   <a class="brand" href="#home" aria-label="觉心 首页"><span class="brand-mark">觉</span><span><strong>觉心</strong><small>精神分析协会</small></span></a>
-  <nav aria-label="主导航" id="nav"><a href="#about">关于觉心</a><a href="#gatherings">一起共学</a><a href="#people">同行的人</a><a href="#join" class="nav-join">加入我们 <span>↗</span></a></nav>
+  <nav aria-label="主导航" id="nav"><a href="#about">关于觉心</a><a href="#archive">现场片段</a><a href="#gatherings">一起共学</a><a href="#people">同行的人</a><a href="#join" class="nav-join">加入我们 <span>↗</span></a></nav>
   <button class="menu-toggle" aria-label="打开导航" aria-controls="nav" aria-expanded="false">菜单 <span>＋</span></button>
 </header>
 <main>
@@ -29,8 +30,17 @@
 </section>
 <section id="about" class="about section">
   <div class="section-label"><span>01 / 关于觉心</span><span>THE SPACE BETWEEN US</span></div>
-  <div class="intro-grid"><h2>有些问题，<br>值得一起慢慢读。</h2><div class="intro-copy"><p class="lead">一个面向基础理论与跨学科交流的学生学术社团。</p><p>我们因对精神分析的兴趣相聚，希望把零散的好奇，变成持续的阅读和共同讨论。在这里，你可以带着一个概念、一段文本，或一个尚未想清楚的问题，加入对话。</p><p>觉心精神分析协会已正式成立，向温州医科大学及温州医科大学仁济学院的全体学生开放。</p></div></div>
+  <div class="intro-grid"><h2>有些问题，<br>值得一起慢慢读。</h2><div class="intro-copy"><p class="lead">一个面向基础理论与跨学科交流的学生学术社团。</p><p>从一个概念、一段文本或一个尚未想清楚的问题出发，我们一起阅读、讨论，让好奇变成长期的共学。</p><p class="intro-note">觉心已正式成立，面向温州医科大学及温州医科大学仁济学院全体学生开放。</p></div></div>
   <div class="principles"><article><span>01</span><h3>从基础开始</h3><p>从基础理论入门，在持续阅读中建立清晰的概念框架。</p></article><article><span>02</span><h3>让阅读有回声</h3><p>通过读书会与研讨班，把个人的理解带进共同的讨论。</p></article><article><span>03</span><h3>在学科之间相遇</h3><p>连接精神医学、心理学与人文社科，让不同视角彼此启发。</p></article></div>
+</section>
+<section class="archive section" id="archive" aria-labelledby="archive-heading">
+  <div class="section-label"><span>现场片段 / 视觉档案</span><span>FROM THE FOUNDING DECK</span></div>
+  <div class="archive-head"><h2 id="archive-heading">把共学的现场，<br>留在页面里。</h2><p>宣讲、讨论与实践，都是觉心开始生长的证据。</p><span class="archive-hint">拖动或横向滑动 <b>↔</b></span></div>
+  <div class="archive-track" tabindex="0" aria-label="觉心视觉档案，可横向拖动">
+    <figure class="archive-card archive-card-wide"><img src="assets/activity.jpg" alt="觉心首学期活动规划与精神分析基础理论学习现场" loading="lazy"><figcaption><span>01 / 一起阅读</span><strong>从基础理论入门</strong></figcaption></figure>
+    <figure class="archive-card"><img src="assets/people.jpg" alt="觉心指导教师与筹办团队介绍" loading="lazy"><figcaption><span>02 / 同行的人</span><strong>教师指导，学生共建</strong></figcaption></figure>
+    <figure class="archive-card archive-card-tall"><img src="assets/impact.jpg" alt="觉心开展宣讲、公益咨询与医院实践" loading="lazy"><figcaption><span>03 / 走向现场</span><strong>让理解成为可抵达的支持</strong></figcaption></figure>
+  </div>
 </section>
 <section class="questions section" aria-labelledby="question-heading">
   <div class="question-aside"><p class="eyebrow">A MOMENT OF REFLECTION</p><h2 id="question-heading">从一个问题<br>走近精神分析。</h2><p>选一个此刻让你好奇的问题。</p><div class="question-tabs" role="tablist" aria-label="探索问题"><button role="tab" aria-selected="true" aria-controls="question-panel" id="q0" data-question="0">反复的关系</button><button role="tab" aria-selected="false" aria-controls="question-panel" id="q1" data-question="1" tabindex="-1">说不出的感受</button><button role="tab" aria-selected="false" aria-controls="question-panel" id="q2" data-question="2" tabindex="-1">阅读与理解</button></div></div>
@@ -47,14 +57,14 @@
 </section>
 <section class="practice section">
   <div class="practice-title"><p class="eyebrow">LEARNING THROUGH EXPERIENCE</p><h2>把一次训练，<br>沉淀为长期的共学。</h2></div>
-  <div class="practice-content"><p>上学期的精神分析技能实验训练，让参与者从讨论走向实践，也为社团积累了主题梳理、讨论主持与反思沉淀的经验。</p><div class="numbers"><div><strong>5<span>节</span></strong><p>主持讨论</p></div><div><strong>14<span>学时</span></strong><p>实践训练</p></div><div><strong>21<span>人</span></strong><p>参与前期筹备</p></div></div><blockquote>“从单纯的学习者，逐渐转向一个讨论的组织者和引导者。”<cite>参与学生的真实反馈 · 社团成立宣讲</cite></blockquote></div>
+  <div class="practice-content"><p>从讨论走向实践，训练主题梳理、讨论主持与反思沉淀。</p><div class="numbers"><div><strong>5<span>节</span></strong><p>主持讨论</p></div><div><strong>14<span>学时</span></strong><p>实践训练</p></div><div><strong>21<span>人</span></strong><p>参与前期筹备</p></div></div><blockquote>“从单纯的学习者，逐渐转向一个讨论的组织者和引导者。”<cite>参与学生的真实反馈 · 社团成立宣讲</cite></blockquote></div>
 </section>
 <section class="section people" id="people">
   <div class="section-label"><span>03 / 同行的人</span><span>LEARNING TOGETHER</span></div>
   <div class="section-heading"><h2>共同的兴趣，<br>让我们在这里相遇。</h2><p>教师指导与学生共建，<br>为持续学习提供支持。</p></div>
-  <div class="people-grid"><article><p class="person-role">指导教师</p><h3>张燎</h3><p class="person-title">温州医科大学精神医学院讲师</p><p>精神分析学博士，哈佛大学医学院博士后。研究方向包括失眠、焦虑、抑郁等身心健康问题，以及精神医学技术产品转化。</p></article><article><p class="person-role">发起人</p><h3>沈洲杰</h3><p class="person-title">精神医学院 2024 级本科生</p><p>持续阅读精神分析名著，参与论文与项目研究。与筹备成员一起，把个人的学习兴趣转化为可以长期同行的社团。</p></article></div>
+  <div class="people-grid"><article><p class="person-role">指导教师</p><h3>张燎</h3><p class="person-title">温州医科大学精神医学院讲师</p><p>精神分析学博士，哈佛大学医学院博士后，研究方向覆盖睡眠、焦虑抑郁与精神医学技术转化。</p></article><article><p class="person-role">发起人</p><h3>沈洲杰</h3><p class="person-title">精神医学院 2024 级本科生</p><p>持续阅读精神分析名著，参与论文与项目研究，负责把兴趣变成可以长期同行的社团。</p></article></div>
 </section>
-<section class="library section"><div><p class="eyebrow">A SPACE TO RETURN TO</p><h2>讨论之后，<br>仍有一处可以回访。</h2><p>在觉心线上学习空间，继续查阅资料、回看学习记录，<br class="desktop-only">让每一次阅读与交流留下痕迹。</p><a href="https://juexin.mikansei.cn" target="_blank" rel="noopener noreferrer" class="button light">进入线上学习空间 <span>↗</span></a></div><div class="library-index"><span>JUEXIN / 学习空间</span><a href="https://juexin.mikansei.cn" target="_blank" rel="noopener noreferrer">01 <strong>资料库</strong><span>书籍与研讨资料 ↗</span></a><a href="https://juexin.mikansei.cn" target="_blank" rel="noopener noreferrer">02 <strong>公告与精华</strong><span>活动与学习线索 ↗</span></a><a href="https://juexin.mikansei.cn" target="_blank" rel="noopener noreferrer">03 <strong>讨论与搜索</strong><span>让问题彼此连接 ↗</span></a><a href="https://juexin.mikansei.cn" target="_blank" rel="noopener noreferrer">04 <strong>学习记录</strong><span>回看与沉淀 ↗</span></a></div></section>
+<section class="library section"><div><p class="eyebrow">A SPACE TO RETURN TO</p><h2>讨论之后，<br>仍有一处可以回访。</h2><p>资料、公告与学习记录，留给每一次讨论一个可以回访的地方。</p><a href="https://juexin.mikansei.cn" target="_blank" rel="noopener noreferrer" class="button light">进入线上学习空间 <span>↗</span></a></div><div class="library-index"><span>JUEXIN / 学习空间</span><a href="https://juexin.mikansei.cn" target="_blank" rel="noopener noreferrer">01 <strong>资料库</strong><span>书籍与研讨资料 ↗</span></a><a href="https://juexin.mikansei.cn" target="_blank" rel="noopener noreferrer">02 <strong>公告与精华</strong><span>活动与学习线索 ↗</span></a><a href="https://juexin.mikansei.cn" target="_blank" rel="noopener noreferrer">03 <strong>讨论与搜索</strong><span>让问题彼此连接 ↗</span></a><a href="https://juexin.mikansei.cn" target="_blank" rel="noopener noreferrer">04 <strong>学习记录</strong><span>回看与沉淀 ↗</span></a></div></section>
 <section class="section join" id="join"><div class="join-copy"><p class="eyebrow">THERE IS ROOM FOR YOUR CURIOSITY</p><h2>带上你的好奇，<br>我们一起开始。</h2><p>面向温州医科大学及<br>温州医科大学仁济学院全体学生开放。</p><p class="join-secondary">扫描二维码加入 QQ 群，了解活动与共学安排。<br>也可以在 QQ 中搜索群号。</p><div class="copy-row"><span>QQ群 <strong>1046657889</strong></span><button id="copy-qq" class="copy-button">复制群号</button></div><p id="copy-status" role="status" aria-live="polite"></p></div><figure class="qr-card"><img src="assets/qq-group.jpg" alt="觉心精神分析协会 QQ 群二维码，群号 1046657889" loading="lazy"><figcaption>使用 QQ 扫一扫，加入我们的共学空间</figcaption><a href="assets/qq-group.jpg" download="觉心QQ群二维码.jpg">保存入群二维码 ↓</a></figure></section>
 </main>
 <footer><a class="footer-brand" href="#home">觉心<span>精神分析协会</span></a><p>理解自己，也理解他人。</p><div><span>温州医科大学 · 精神医学院</span><small>学生学术交流社团 · 社团活动不替代专业心理咨询或诊疗</small></div><a href="#home" aria-label="回到顶部">↑</a></footer>

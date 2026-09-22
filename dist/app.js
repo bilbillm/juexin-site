@@ -38,4 +38,20 @@ document.querySelector('#copy-qq').addEventListener('click',async()=>{
   try{await navigator.clipboard.writeText('1046657889');status.textContent='已复制群号，打开 QQ 搜索即可。';}
   catch{status.textContent='请长按或选中群号复制：1046657889';}
 });
-if('IntersectionObserver' in window && !reduced.matches){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.08});document.querySelectorAll('.intro-grid,.principles article,.section-heading,.people-grid article,.practice-content,.library-index').forEach(el=>{el.classList.add('reveal');observer.observe(el);});}
+const progressBar=document.querySelector('.scroll-progress span');
+let progressFrame=0;
+function updateProgress(){if(progressFrame)return;progressFrame=requestAnimationFrame(()=>{const max=document.documentElement.scrollHeight-window.innerHeight;progressBar.style.width=`${max>0?(window.scrollY/max)*100:0}%`;progressFrame=0;});}
+window.addEventListener('scroll',updateProgress,{passive:true});
+window.addEventListener('resize',updateProgress,{passive:true});
+updateProgress();
+const archiveTrack=document.querySelector('.archive-track');
+let dragging=false,startX=0,startScroll=0;
+archiveTrack.addEventListener('pointerdown',event=>{if(event.pointerType==='mouse'&&event.button!==0)return;dragging=true;startX=event.clientX;startScroll=archiveTrack.scrollLeft;archiveTrack.classList.add('is-dragging');archiveTrack.setPointerCapture(event.pointerId);});
+archiveTrack.addEventListener('pointermove',event=>{if(!dragging)return;archiveTrack.scrollLeft=startScroll-(event.clientX-startX)*1.15;});
+function stopDragging(){dragging=false;archiveTrack.classList.remove('is-dragging');}
+archiveTrack.addEventListener('pointerup',stopDragging);archiveTrack.addEventListener('pointercancel',stopDragging);archiveTrack.addEventListener('lostpointercapture',stopDragging);
+if('IntersectionObserver' in window && !reduced.matches){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.08});document.querySelectorAll('.intro-grid,.principles article,.section-heading,.people-grid article,.practice-content,.library-index,.archive-head,.archive-card').forEach(el=>{el.classList.add('reveal');observer.observe(el);});}
+if(!('IntersectionObserver' in window) || reduced.matches){document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));}
+function revealFallback(){document.querySelectorAll('.reveal:not(.visible)').forEach(el=>{if(el.getBoundingClientRect().top<window.innerHeight*1.2)el.classList.add('visible');});}
+window.addEventListener('scroll',revealFallback,{passive:true});
+window.setTimeout(revealFallback,120);
