@@ -42,13 +42,30 @@ python -m http.server 8080 --directory dist
 
 ## 回滚
 
-- 本次文案重构前：`dist-backup-before-copy-rewrite/`。
-- v3 视觉改版前：`dist-backup-before-v3/`。
-- v1／v2 快照：上级目录的 `juexin-site-backup-before-v2/`、`觉心网站-v1-*.zip`、`觉心网站-v2-视觉增强预览.zip`。
+版本历史只在 git 里。2026-09-22 按「只保留最新版本」清理掉了全部本地备份目录与 zip，此前各版本已逐文件核对过，全部可从提交取回。
+
+| 版本 | 提交 |
+|---|---|
+| v1 初版 | `68e345b` |
+| v2 视觉增强预览 | `5845e76` |
+| v3「书斋」视觉改版 | `2a559f8` |
+| 全站文案重构 | `06aeb32` |
+| 页脚品牌裁切修复 | `84c7073` |
+| 二维码改用风格版 | `44bd7e7` |
+| 线上学习空间确认可访问 | `bb8548f` |
+
+当前版本即仓库最新提交。取回旧版本：
+
+```bash
+git show 2a559f8:dist/index.html > 旧版-index.html          # 单文件
+git archive 2a559f8 dist | tar -x -C ../某目录              # 整个 dist
+```
+
+私有仓库：https://github.com/bilbillm/juexin-site。`.gitignore` 仍挡着 `dist-backup-*`、`verify-shots*`，以后若再生成本地副本也不会进提交。
 
 ## 部署
 
-`_source/publish_static.py` 把 `dist`、`.openai/hosting.json`、`.gitignore`、`README.md` 推送到托管仓库（凭据从 stdin 读入，不落盘）。`文案基线.md` 与 `dist-backup-*` 不参与部署。
+`_source/publish_static.py` 把 `dist`、`.openai/hosting.json`、`.gitignore`、`README.md` 推送到托管仓库（凭据从 stdin 读入，不落盘）。`文案基线.md`、本机校验脚本与校验截图都不参与部署。
 
 ## 本地检查
 
