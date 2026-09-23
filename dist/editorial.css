@@ -1,4 +1,4 @@
-/* 觉心 · 共学档案。原生滚动、印刷网格、克制的双色图式。 */
+/* 澄心 · 共学档案。原生滚动、印刷网格、克制的双色图式。 */
 :root {
   --paper:#f3eddf; --surface:#faf6ed; --ink:#24231f; --muted:#686458;
   --red:#b83a2b; --blue:#2953ae; --line:#cbc5b8; --soft-line:#ddd6c8;
@@ -42,7 +42,7 @@ button,a,summary {-webkit-tap-highlight-color:transparent;}
 .hero-meta p:nth-child(2) {font:10px var(--mono);letter-spacing:.11em;}
 .hero-meta>span {color:var(--red);}
 .hero-masthead {display:flex;position:relative;align-items:center;justify-content:space-between;border-bottom:1px solid var(--ink);padding-bottom:12px;line-height:.86;}
-.hero-masthead>.wordmark {display:flex;font-family:"Bodoni MT",Didot,"Times New Roman",serif;font-size:clamp(100px,19.8vw,325px);font-weight:400;letter-spacing:-.075em;line-height:1.02;margin-left:-.015em;padding-top:4px;transform:translate3d(var(--type-x,0px),var(--type-y,0px),0);}
+.hero-masthead>.wordmark {display:flex;font-family:"Bodoni MT",Didot,"Times New Roman",serif;font-size:clamp(90px,15.8vw,260px);font-weight:400;letter-spacing:-.075em;line-height:1.02;margin-left:-.015em;padding-top:4px;transform:translate3d(var(--type-x,0px),var(--type-y,0px),0);}
 .wordmark>span {display:block;animation:letter-arrive 1.5s calc(var(--letter)*95ms) var(--ease) both;}
 .wordmark em {display:block;font-style:normal;animation:letter-drift 7s calc(1.6s + var(--letter)*220ms) ease-in-out infinite;}
 .wordmark .wordmark-cross {color:var(--red);margin-right:.015em;}
@@ -234,7 +234,7 @@ body.motion-paused .wordmark em {animation:none;transform:none;}
   .header nav a {font-size:18px;gap:20px;min-height:48px;}.header nav a small {font-size:11px;}
   .header nav a.nav-join {margin:12px 0 0;justify-content:space-between;font-size:14px;}
   .hero-meta {padding:18px 0 15px;font-size:9px;}.hero-meta p:nth-child(2) {display:none;}
-  .hero-masthead>.wordmark {font-size:21.7vw;}.hero-masthead i {font-size:6vw;margin-right:4%;}.hero-masthead b {font-size:13px;top:3%;}
+  .hero-masthead>.wordmark {font-size:clamp(52px,15.5vw,105px);}.hero-masthead i {font-size:6vw;margin-right:4%;}.hero-masthead b {font-size:13px;top:3%;}
   .hero-grid {grid-template-columns:1fr;gap:35px;padding:34px 0 27px;}
   .hero h1 {font-size:clamp(29px,6.8vw,47px);line-height:1.45;}
   .hero-content .eyebrow {margin-bottom:20px;}.hero-copy {font-size:13px;max-width:32em;margin-top:22px;}
